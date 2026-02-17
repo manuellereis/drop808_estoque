@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drop808 - Estoque</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .logo{
+      display:flex;
+      justify-content:center;
+      margin-bottom:40px;
+    }
+
+    /* ================= DESKTOP ================= */
+
+    .web {
+      width: 390px;
+      height: 844px;
+      background: #ffffff;
+      border-radius: 35px;
+      padding: 30px 25px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 600;
+      font-size: 22px;
+      color: #ff0000;
+      letter-spacing: 1px;
+    }
+
+    .shoe {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-25deg);
+      width: 1000px;
+      opacity: 1;
+    }
+
+    .content {
+      margin-top: auto;
+      color: #ff0000;
+      z-index: 2;
+    }
+
+    .content h1 {
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-bottom: 25px;
+      max-width: 300px;
+    }
+
+    .btn {
+      background: #ff0000;
+      color: #ffffff;
+      padding: 16px;
+      border-radius: 30px;
+      text-align: center;
+      font-weight: 500;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .arrow {
+      font-size: 20px;
+    }
+
+    /* ================= MOBILE ================= */
+
+    @media (max-width: 768px) {
+
+      body {
+        background: #ffffff;
+        height: 100vh;
+        padding: 30px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .web {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        padding: 0;
+        background: transparent;
+      }
+
+      .logo {
+        color: #ff0000;
+      }
+
+      .shoe {
+        position: absolute;
+        top: 50px;
+        left:55%;
+        transform: translateX(-50%) rotate(-25deg);
+        width: 800px;
+      }
+
+      .content {
+        margin-top: auto;
+        color: #ff0000;
+      }
+
+      .content h1 {
+        font-size: 42px;
+      }
+
+      .content p {
+        max-width: 100%;
+      }
+
+      .btn {
+        background: #ff0000;
+        color: #ffffff;
+        border-radius: 40px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="web">
+
+  <div class="logo">
+    <!-- coloque sua logo aqui -->
+    <img src="assets/logo_bg_red.png" alt="Drop808">
+  </div>
+
+    <img src="assets/simbol_shoe.png" class="shoe" alt="Tênis">
+
+    <div class="content">
+      <h1>Estoque<br>Online</h1>
+
+      <p>
+        Somos uma loja indie de venda de tênis,
+        sneakers e peças de roupas com o melhor valor
+        e a pronta entrega.
+      </p>
+
+      <a href="page_2.html" target="_blank">
+        <div class="btn">
+          Acessar Estoque
+          <span class="arrow">→</span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
